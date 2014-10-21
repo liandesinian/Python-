@@ -1,0 +1,42 @@
+Content-Type: multipart/mixed; boundary="===============8795168816948134415=="
+MIME-Version: 1.0
+To: recipient@example.com
+From: Test sender <sender@example.com>
+Subject: Test
+Date: Sat, 18 Oct 2014 23:17:44 +0800
+Message-ID: <20141018151744.26091.54443@xiaorou>
+
+--===============8795168816948134415==
+Content-Type: multipart/alternative;
+ boundary="===============0252868904126592797=="
+MIME-Version: 1.0
+
+--===============0252868904126592797==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello, This is a test
+--===============0252868904126592797==
+Content-Type: text/html; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+
+Hello, This is a test
+--===============0252868904126592797==--
+--===============8795168816948134415==
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Content-Disposition: attachment; filename="test.txt"
+
+This is a test
+
+--===============8795168816948134415==
+Content-Type: application/octet-stream
+MIME-Version: 1.0
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="test.txt.gz"
+
+H4sIAMRqQlQAAwvJyCxWAKJEhZLU4hIuAIwtwPoPAAAA
+--===============8795168816948134415==--

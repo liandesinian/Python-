@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--Sample XML Document-sample.xml-->
+<book>
+    <title>Sample XML Thing</title>
+    <author><name><first>Ben</first> <last>Smith</last></name><affiliation>Spring</affiliation></author>
+    
+    <chapter number="1">
+        <title>First Chapter</title>
+        <para>
+            I think widgets are great.<company>Spring</company>
+        </para>
+    </chapter>
+</book>
