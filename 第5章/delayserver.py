@@ -13,32 +13,31 @@ s.bind(ADDR)
 s.listen(1)
 
 while True:
-	try:
-		client,addr=s.accept()
-	except KeyboardInterrupt:
-		raise
-	except:
-		traceback.print_exc()
-		continue
+    try:
+        client,addr=s.accept()
+    except KeyboardInterrupt:
+        raise
+    except:
+        traceback.print_exc()
+        continue
 
-	try:
-		print "Got connection from",client.getpeername()
-		while True:
-			try:
-				client.sendall(time.asctime()+'\n')
-			except:
-				break
-			time.sleep(5)
-	except (KeyboardInterrupt,SystemExit):
-		raise
-	except:
-		traceback.print_exc()
+    try:
+        print "Got connection from",client.getpeername()
+        while True:
+            try:
+                client.sendall(time.asctime()+'\n')
+            except:
+                break
+            time.sleep(5)
+    except (KeyboardInterrupt,SystemExit):
+        raise
+    except:
+        traceback.print_exc()
 
 try:
-	client.close()
+    client.close()
 except KeyboardInterrupt:
-	raise
+    raise
 except:
-	traceback.print_exc()
+    traceback.print_exc()
 
-print 'ok'
